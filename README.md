@@ -26,8 +26,8 @@ The utility is built around three core components:
 
 ## Requirements
 
-- Python 3.8+
-- Dependencies listed in `requirements.txt` (if applicable)
+- Python 3.10+
+- Dependencies listed in `requirements.txt`
 - Access to AWS S3 and PostgreSQL RDS instances
 
 ## Installation
@@ -42,7 +42,7 @@ The utility is built around three core components:
 2. Install required Python packages:
 
    ```bash
-   TBD
+   pip install -r requirements.txt
    ```
 
 3. Configure the environment variables required for your AWS and database credentials.
