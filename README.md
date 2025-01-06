@@ -1,6 +1,6 @@
 # Python Data Movement Utility
 
-This repository contains a Python utility designed to move data between PostgreSQL RDS databases and Amazon S3 buckets, ensuring that all data at rest is encrypted. This code serves as a sample of DevOps-oriented utilities and is intended to demonstrate concepts rather than provide a fully functioning system.
+This repository contains a portfolio example of a Python utility designed to move data between PostgreSQL RDS databases and Amazon S3 buckets, ensuring that all data at rest is encrypted. This code serves as a sample of DevOps-oriented utilities and is intended to demonstrate concepts rather than provide a fully functioning system.
 
 ## Overview
 
