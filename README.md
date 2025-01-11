@@ -45,17 +45,18 @@ The utility is built around three core components:
    pip install -r requirements.txt
    ```
 
-3. Configure the environment variables required for your AWS and database credentials.
+3. Configure the environment variables required for securing password encryption.
 
    ```bash
-   TBD
+   # Security
+   MY_SECRET_CODE=your_secret_string  # Salt value used for password encryption
    ```
 
 ## Usage
 
 ### Moving Data
 
-TBD
+Following are examples of how to use the utility to move data between PostgreSQL RDS and S3.
 
 Example:
 
@@ -63,25 +64,11 @@ Example:
 TBD
 ```
 
-### Utility Functions
-
-Use functions from `MyUtils` for tasks like logging and PostGRES queries.
-
-Example:
-
-```python
-TBD
-```
 
 ## Roadmap
 
-- Generalize the utility to support additional databases and cloud storage services.
 - Enhance error handling and logging for better debugging.
-- Add support for data transformation during transfer.
-
-## Contributing
-
-TBD
+- Add support for additional databases.
 
 ## License
 
