@@ -74,7 +74,7 @@ python.exe .\moveDataFactory.py --control_host dev_db --control_db llm_test --ty
 python.exe .\moveDataFactory.py --control_host dev_db --control_db v1_my_test1 -h2 dev_db -d2 staging_my --type backup_runner --temp_location network
 
 #Backup DB structure
-python.exe F:\DevOps\Python\Lib\V2_0\moveDataFactory.py --control_host dev_db2 --control_db v1_dev_client18 --type structure_backup
+python.exe .\moveDataFactory.py --control_host dev_db2 --control_db v1_dev_client18 --type structure_backup
 ```
 
 
