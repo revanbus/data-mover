@@ -61,7 +61,20 @@ Following are examples of how to use the utility to move data between PostgreSQL
 Example:
 
 ```python
-TBD
+# Create a new database
+python.exe .\moveDataFactory.py --control_host dev_db --control_db v1_my_test1 --type create_database --temp_location network
+
+# Populate the runner server from v1_standard template
+python.exe .\moveDataFactory.py --control_host dev_db --control_db staging_client --type build_runner_server -h2 dev_db -d2 v1_my_test1_rvb -nct TRUE
+
+# Move data tables over from source server
+python.exe .\moveDataFactory.py --control_host dev_db --control_db llm_test --type staging_to_process -h2 dev_db -d2 v1_my_test1
+
+#Runner to S3
+python.exe .\moveDataFactory.py --control_host dev_db --control_db v1_my_test1 -h2 dev_db -d2 staging_my --type backup_runner --temp_location network
+
+#Backup DB structure
+python.exe F:\DevOps\Python\Lib\V2_0\moveDataFactory.py --control_host dev_db2 --control_db v1_dev_client18 --type structure_backup
 ```
 
 
